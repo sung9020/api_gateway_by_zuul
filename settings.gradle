@@ -1,0 +1,4 @@
+rootProject.name = 'gw'
+
+include 'auth'
+include 'gateway'

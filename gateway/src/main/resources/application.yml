@@ -1,0 +1,23 @@
+server:
+  port: 9090
+
+
+spring:
+  profiles: local
+  devtools:
+    livereload:
+      enabled: true
+  redis:
+    host: 127.0.0.1
+    port: 6379
+
+zuul:
+  host:
+    connect-timeout-millis: 60000
+    max-per-route-connections: 20
+    max-total-connections: 200
+    socket-timeout-millis: 60000
+  add-proxy-headers: true
+
+logging:
+  config: classpath:logback.xml
